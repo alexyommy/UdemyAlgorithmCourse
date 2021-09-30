@@ -74,5 +74,18 @@ root.right.right = new Node(7);
 root.right.left = new Node(6);
 root.right.left.right = new Node(8);
 // variable to store sum of leaf nodes
-leafSum(root);
+// leafSum(root);
 console.log(sum);
+
+// Given a number and an array, return true if two numbers add up to the given number
+function hasSumOfK(arr, K) {
+    hashmap = {};
+    for (let i = 0; i < arr.length; i++) {
+        let diff = sum - N[i];
+        if(hashmap[diff] != undefined && indexes[diff] != i){
+            re
+        }
+    }
+}
+
+console.log(hasSumOfK([1,2,3,4], 5));
