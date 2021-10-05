@@ -87,5 +87,10 @@ function hasSumOfK(arr, K) {
         }
     }
 }
+// Q1 - Given a number and array, return true if two numbers add up to the given number
+
+// Q2 - Given a node with a numerical value (from a binary tree), return the total sum of each node
+
 
 console.log(hasSumOfK([1,2,3,4], 5));
+
