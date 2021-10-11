@@ -75,22 +75,28 @@ root.right.left = new Node(6);
 root.right.left.right = new Node(8);
 // variable to store sum of leaf nodes
 // leafSum(root);
-console.log(sum);
+// console.log(sum);
 
 // Given a number and an array, return true if two numbers add up to the given number
-function hasSumOfK(arr, K) {
-    hashmap = {};
-    for (let i = 0; i < arr.length; i++) {
-        let diff = sum - N[i];
-        if(hashmap[diff] != undefined && indexes[diff] != i){
-            re
+function hasSumOfK(arr, goal) {
+    // Create an Emty Objects
+    let numObject = {};
+
+    // Iterate through array with for-loop
+    for (let eachNum in arr){
+        let otherNum = goal - arr[eachNum];
+        if(otherNum in numObject){
+            let resultArr = [];
+            resultArr.push(otherNum, arr[eachNum])
+            return resultArr;
+            // return true;
         }
+        numObject[arr[eachNum]] = eachNum;
     }
+    return false;
 }
-// Q1 - Given a number and array, return true if two numbers add up to the given number
+var arr = [1,3,10,11,14]
+var goal = 13
+console.log(hasSumOfK(arr, goal));
 
 // Q2 - Given a node with a numerical value (from a binary tree), return the total sum of each node
-
-
-console.log(hasSumOfK([1,2,3,4], 5));
-
